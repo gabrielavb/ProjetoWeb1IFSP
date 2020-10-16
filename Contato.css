@@ -1,0 +1,113 @@
+/* Gabi-menu incio */
+.logo{
+    width: 150px;
+    padding: 15px;
+    margin-right: 600px;
+  }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #1f3d7a;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  margin-right: -10px;
+  font-size: 25px ;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+li a:hover {
+  background-color: #3366cc;
+}
+
+.active {
+  background-color: #e6e600;
+}
+
+  /* Gabi menu fim */
+
+.bloquinho{
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mapa{
+  border-radius: 10px;
+  width: 100%;
+}
+
+.telefone_img{
+  float: left;
+  padding: 55px;
+  margin: -40px -50px 10px 0;
+  max-width: 40px;
+  height: 3%;
+  width: 3%;
+}
+
+.email_img{
+  float: left;
+  border: transparent thin solid;
+  padding: 60px;
+  margin: -61px -50px 10px -90px;
+  max-width: 40px;
+  height: 3%;
+  width: 3%;
+}
+
+.footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+  color: white;
+  background-color: #1f3d7a;
+  font-size: 18px;
+  overflow: hidden;
+  max-width: 97%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+  position: relative;
+  bottom: 470px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+    .logo{
+      width: 90px;
+      padding: 15px;
+      margin-right: 200px;
+     
+    }
+  
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1f3d7a;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    margin-right: -10px;
+    font-size: 13px;
+    }
+  }

@@ -1,20 +1,21 @@
-/* Gabi-menu incio */
-.logo{
-    width: 150px;
-    padding: 15px;
-    margin-right: 600px;
-  }
-
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #1f3d7a;
-  position: -webkit-sticky; /* Safari */
   position: sticky;
   margin-right: -10px;
-  font-size: 20px ;
+  font-size: 35px;
+  max-width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.logo{
+  width: 200px;
+  padding: 15px;
+  margin-right: 800px;
 }
 
 li {
@@ -27,8 +28,6 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-
 }
 
 li a:hover {
@@ -39,100 +38,161 @@ li a:hover {
   background-color: #e6e600;
 }
 
-  /* Gabi menu fim */
+.header{
+    position: relative;
+    bottom: 470px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-  /* Bruna Rodrigues produtos inicio */
-.menu_produtos{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #96968d;
-    font-size: 15px;
+/* Bruna Rodrigues inicio css */
+ .menu_produtos{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #96968d;
+  font-size: 15px;
 }
 
 .itens_produtos {
-    float: none;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    border: 1px solid #cccc;
-  }
+  float: none;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #cccc;
+}
 
 .itens_produtos:hover{
-    background-color: #3366cc;
+  background-color: #3366cc;
 }
 
+
 .accordion {
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 25px;
+  transition: 0.4s;
+  border: 0.5px solid #ccc;
 }
-  
+
 .active, .accordion:hover {
-    background-color: #ccc; 
+  background-color: #ccc; 
 }
-  
+
+.active {
+  background-color: #e6e600;
+}
+
 .panel {
-    padding: 0 18px;
-    display: none;
-    background-color: white;
-    overflow: hidden;
+  /* padding: 0 18px; */
+  display: none;
+  background-color: white;
+  overflow: hidden;
 }
 
 .panel-img{
-    padding: 0 10px;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    margin: auto;
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin: auto;
 }
 
 .imagem_produto{
-    margin: auto;
+  margin: auto;
 }
 .legenda_produto{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 5px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5px;
+  font-size: 20px;
 
+} 
+
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+  color: white;
+  background-color: #1f3d7a;
+  font-size: 20px;
+  overflow: hidden;
+  max-width: 97%;
+  font-family: Arial, Helvetica, sans-serif;
 }
-/* Bruna Rodrigues produtos fiim */
 
-@media screen and (max-width: 767px) {
-    .logo{
-      width: 90px;
-      padding: 15px;
-      margin-right: 200px;
-     
-    }
-  
-    ul {
+.menu{
+  margin-bottom: 450px;
+}
+
+/* Bruna Rodrigues produtos fiim */
+@media screen and (max-width: 767px) { /* Contorno para Mobile- Gabriela Viana */
+  .logo{
+    width: 150px;
+    padding: 15px;
+    margin-right: 200px;
+  }
+
+  .accordion{
+    font-size: 20px;
+    padding: 16px;
+  }
+
+  ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #1f3d7a;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky; /* Contorno para Safari- Gabriela Viana */
     position: sticky;
     margin-right: -10px;
-    font-size: 13px;
-    }
-
-    /* Bruna Rodrigues */
-    .panel-img{
-        display: block;
-        overflow: scroll;
-    }
-
-    img{
-        width: 100%;
-    }
+    font-size: 15px;
+    max-width: 110%;
   }
+
+ .panel-img{
+      display: block;
+      overflow: scroll;
+  }
+
+  img{
+      width: 70%;
+      margin: auto;
+  } 
+
+  .menu{
+    margin-bottom: 240px;
+  }
+   .button {
+    position: relative;
+    left: 50px;
+    top: 100px;
+    background-color: #e6e600;
+    border: none;
+    color: white;
+    padding: 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    border-radius: 4px
+    }
+
+    footer{
+      margin: auto;
+      padding: 10px;
+      overflow: hidden;
+      width: 100%;
+    }
+    
+}
